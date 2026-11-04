@@ -23,7 +23,7 @@
 <h1>Privacy policy<br>
 <span lang="zh-Hans">隐私政策</span>
 </h1>
-<p class="meta">Effective / 生效日期: October 15, 2026 · 2026 年 10 月 15 日</p>
+<p class="meta">Effective / 生效日期: November 4, 2026 · 2026 年 11 月 4 日</p>
 <nav class="language" aria-label="Page languages">
 <a class="pill" href="#en" lang="en">English ↓</a>
 <a class="pill" href="#zh" lang="zh-Hans">简体中文 ↓</a>
@@ -34,8 +34,12 @@
 <h3>1. Photos and editing stay on your device</h3>
 <p>Grainvia processes the photos you select, editing settings, text layers and person-segmentation masks on your device. We do not upload this content to a developer server, use it to train models, or identify people. Person segmentation separates a subject from its background; it is not an identity-recognition service.</p>
 <p>You choose photos through the iOS system picker. Saving an edited image to Photos requests permission to add images. Sharing happens only when you choose a destination in the system share sheet. The destination then handles the shared content under its own policies.</p>
+<h3 id="face-data-en">1.1. Face data and on-device machine learning</h3>
+<p>Photos you select may contain faces. Grainvia does not extract or store facial landmarks, face embeddings, three-dimensional face models or identity-recognition templates, and does not identify people. Some editing effects use Apple Vision’s on-device machine learning to generate a mask that separates people from the background. This mask may include the outline of a person’s head and is used only for layered editing. Photos and masks are not uploaded to a developer server or a third-party AI service, and are not used to train models. The app does not use generative AI. When you actively share an exported image, it is handled by the recipient you choose.</p>
 <h3>2. Local storage and deletion</h3>
-<p>Drafts can store a copy of the selected image, typed text and editing settings inside the app’s storage. The app also keeps local preferences and derived mask caches. These remain until replaced, removed by the system, or deleted with the app. To remove all app-local data, use iOS Delete App, not Offload App. Exported images in Photos must be deleted separately. iOS or iCloud backups may retain app data according to your device settings; manage those backups through Apple’s controls.</p>
+<p>Drafts can store a copy of the selected image, typed text and editing settings inside the app’s storage. The app also keeps local preferences and derived mask caches. Photo copies and person masks follow the retention practices in section 2.1. Preferences remain until changed or deleted with the app. To remove all app-local data, use iOS Delete App, not Offload App. Exported images in Photos must be deleted separately. iOS or iCloud backups may retain app data according to your device settings; manage those backups through Apple’s controls.</p>
+<h3 id="retention-en">2.1. Retention of photo copies and person masks</h3>
+<p>Draft image copies have no fixed automatic expiration period and may remain in the app’s local storage until you remove its data using iOS Delete App. Starting to edit another photo does not guarantee deletion of earlier image copies. The current person-mask disk cache retains up to 64 files; when newly added files exceed that limit, older files are removed. The system may also clear cached files. Closing the editor does not immediately delete these files. Offload App may retain app data. Exported images in Photos and device or iCloud backups must be managed or deleted separately using Apple’s controls.</p>
 <h3>3. Purchases</h3>
 <p>Apple processes payments and subscriptions. Grainvia uses StoreKit transaction information, such as product, purchase, expiry and revocation status, to verify and restore Pro access. We do not receive your payment-card details or Apple Account password. Apple handles its own records under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
 <h3>4. Diagnostics and support</h3>
@@ -55,8 +59,12 @@
 <h3>1. 照片与编辑在设备上完成</h3>
 <p>Grainvia 在你的设备上处理你选择的照片、编辑参数、文字图层和人物分割蒙版。我们不会将这些内容上传至开发者服务器，不会用于训练模型，也不会识别人物身份。人物分割仅用于区分主体与背景，不属于身份识别服务。</p>
 <p>你通过 iOS 系统照片选择器选择照片；保存成片到相册时，App 会申请添加照片的权限。只有你在系统分享面板中选择接收方后，内容才会分享给该接收方，并受其相关政策约束。</p>
+<h3 id="face-data-zh">1.1. 人脸数据与本地机器学习</h3>
+<p>用户选择的照片可能包含人脸。Grainvia 不提取或保存面部关键点、人脸特征向量、面部三维模型或身份识别模板，不识别人物身份。部分编辑效果使用 Apple Vision 的设备端机器学习生成人物与背景的分割蒙版，该蒙版可能包含头部轮廓，仅用于分层编辑。照片和蒙版不会被上传至开发者服务器或第三方 AI 服务，也不会用于训练模型。应用不使用生成式 AI。用户主动分享导出图片时，由用户选择的接收方处理该图片。</p>
 <h3>2. 本地存储与删除</h3>
-<p>草稿可能在 App 存储空间中保存所选图片的副本、输入的文字和编辑参数。App 还会保留本地偏好设置和人物蒙版缓存，直到被替换、由系统清理或随 App 删除。要移除全部 App 本地数据，请使用 iOS 的“删除 App”，而不是“卸载 App／Offload App”。已导出到相册的照片需要单独删除。系统或 iCloud 备份可能根据你的设备设置保留 App 数据，请通过 Apple 提供的设置管理备份。</p>
+<p>草稿可能在 App 存储空间中保存所选图片的副本、输入的文字和编辑参数。App 还会保留本地偏好设置和人物蒙版缓存。照片副本与人物蒙版的保留方式见第 2.1 节；偏好设置保留至用户更改或随 App 删除。要移除全部 App 本地数据，请使用 iOS 的“删除 App”，而不是“卸载 App／Offload App”。已导出到相册的照片需要单独删除。系统或 iCloud 备份可能根据你的设备设置保留 App 数据，请通过 Apple 提供的设置管理备份。</p>
+<h3 id="retention-zh">2.1. 照片副本与人物蒙版的保留期限</h3>
+<p>草稿图片副本没有固定的自动到期时间，可能持续保留在应用本地存储中，直至用户通过 iOS“删除 App”移除应用数据。开始编辑其他照片不保证删除此前的图片副本。当前人物蒙版磁盘缓存最多保留 64 个文件，新增缓存超过上限时清理较早文件，系统也可能清理缓存。关闭编辑页面不会立即删除这些文件。“卸载 App／Offload App”可能保留应用数据。导出到相册的图片和系统或 iCloud 备份需要用户分别通过 Apple 提供的功能管理或删除。</p>
 <h3>3. 购买信息</h3>
 <p>付款与订阅由 Apple 处理。Grainvia 通过 StoreKit 提供的商品、购买、到期和撤销等交易信息验证与恢复 Pro 权益。我们不会获得你的银行卡信息或 Apple 账户密码。Apple 按照其<a href="https://www.apple.com/legal/privacy/">隐私政策</a>处理自身的交易记录。</p>
 <h3>4. 诊断日志与技术支持</h3>
